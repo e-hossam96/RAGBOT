@@ -10,7 +10,7 @@ from langchain_community.document_loaders import (
     TextLoader,
     PyMuPDFLoader,
     WebBaseLoader,
-    Docx2txtLoader,
+    UnstructuredWordDocumentLoader,
 )
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
@@ -33,7 +33,7 @@ class ChunkController(BaseController):
             elif asset_ext == AssetTypeConfig.PDF.value:
                 asset_loader = PyMuPDFLoader(str(asset_path))
             elif asset_ext == AssetTypeConfig.DOCX.value:
-                asset_loader = Docx2txtLoader(asset_path)
+                asset_loader = UnstructuredWordDocumentLoader(asset_path)
         return asset_loader
 
     def get_unstructured_asset_content(
