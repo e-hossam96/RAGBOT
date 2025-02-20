@@ -1,4 +1,4 @@
-name: asap
+name: ragbot
 channels:
   - conda-forge
   - anaconda
