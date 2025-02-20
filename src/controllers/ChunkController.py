@@ -32,7 +32,7 @@ class ChunkController(BaseController):
                 asset_loader = TextLoader(asset_path, encoding="utf-8")
             elif asset_ext == AssetTypeConfig.PDF.value:
                 asset_loader = PyMuPDFLoader(str(asset_path))
-            elif asset_ext == AssetTypeConfig.DOCX.value:
+            elif asset_ext in [AssetTypeConfig.DOCX.value, AssetTypeConfig.DOC.value]:
                 asset_loader = UnstructuredWordDocumentLoader(asset_path)
         return asset_loader
 
