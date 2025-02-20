@@ -10,6 +10,8 @@ conversation has already started, always analyze the previous messages to decide
 whether or not to call the tool and whether you should change the \
 user query to make it clearer or not. Most probably you will use the call if this \
 is NOT the first user query. Avoid calling the tool for repeated questions.
+The tool is language flexible and can handle both Arabic and English queries. Make \
+to call it with a text in the same language as the user query.
 
 The tool will provide you with a set of docuemnts associated with the user's \
 query. You have to generate a response based on the documents provided. \
