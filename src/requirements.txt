@@ -9,6 +9,8 @@ aiofiles==24.1.0
 langchain==0.3.7
 langchain-community==0.3.5
 langchain-text-splitters==0.3.2
+langchain-unstructured==0.1.6
+unstructured==0.16.23
 PyMuPDF==1.24.13
 motor==3.6.0
 openai==1.55.3
