@@ -92,7 +92,7 @@ class OpenAILLMController(BaseController):
             )
             for i, aug in enumerate(augmentations)
         ]
-        augmentations = "\n".join(augmentations)
+        augmentations = "\n\n".join(augmentations)
         return augmentations
 
     def finalize_messages(self, messages: list[dict]) -> list[dict]:
