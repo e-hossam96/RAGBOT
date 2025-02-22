@@ -51,7 +51,7 @@ async def chat(request: Request, rag_config: RagQueryConfig) -> JSONResponse:
         # get tool input parameters
         if "text" in args and tool_name == "search_knowledge_base":
             args["text"] = generation_controller.process_prompt_text(
-                prompt_text=rag_config.text,
+                prompt_text=args["text"],
                 max_tokens=app_settings.EMBEDDING_LLM_MAX_PROMPT_TOKENS,
                 special_tokens=app_settings.EMBEDDING_LLM_SPECIAL_TOKENS,
             )
