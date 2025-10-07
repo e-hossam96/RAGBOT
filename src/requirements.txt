@@ -7,8 +7,8 @@ pydantic==2.9.2
 pydantic-settings==2.6.1
 aiofiles==24.1.0
 langchain==0.3.7
-langchain-community==0.3.5
-langchain-text-splitters==0.3.2
+langchain-community==0.3.27
+langchain-text-splitters==1.0.0a1
 langchain-unstructured==0.1.6
 unstructured[doc,docx]==0.16.23
 python-docx==1.1.2
